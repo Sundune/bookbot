@@ -11,7 +11,6 @@ def get_letter_count(book_contents):
     lower_case = book_contents.lower()
     for letter in lower_case:
         if letter in letters:
-#            counter = 0
             letters[letter] = letters[letter] + 1
         else:
             letters[letter] = 1
@@ -27,7 +26,3 @@ def get_report(letter_dictionary):
     report.sort(reverse=True, key=sorting)
     
     return(report)
-    
- #   letter_list = list(letter_dictionary.items())
- #   letter_list.sort(reverse=True, key=sorting)
- #   return letter_list

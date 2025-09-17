@@ -18,18 +18,8 @@ def get_book_text(path):
 
 def main():
     full_contents = get_book_text(path)
-    
-    # PRINT FULL BOOK Assignment #1
-    #print(full_contents)
 
-    # PRINT COUNT OF WORDS Assignment #2
-    count_str = str(get_num_words(full_contents))# + " " + "words found in the document"
-    #print(count_str)
-
-    #Print DICTIONARY OF COUNT OF EACH LETTER Assignment #3
-    #print(get_letter_count(full_contents))
-
-    # PRINT REPORT OF EVERYTHING Assignment #4
+    count_str = str(get_num_words(full_contents))
 
     letter_dictionary = get_letter_count(full_contents)
     sorted_letters = get_report(letter_dictionary)
